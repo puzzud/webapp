@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<title>App Title</title>
+		<meta charset="UTF-8"/>
+		<meta name="mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+
+		<link rel="icon" sizes="196x196" href="assets/graphics/icons/general/icon196x196.png"/>
+		<link href="style.css" rel="stylesheet" type="text/css" media="screen"/>
+
+		<!--Library-->
+		<!-- build:template:cordova
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="cordova_plugins.js"></script>
+		/build -->
+
+		<!-- build:js:release src/phaser/phaser.min.js -->
+		<!--<script type="text/javascript" src="src/phaser/phaser.js"></script>-->
+		<!-- /build -->
+
+		<!--Main-->
+		<!-- build:js:release src/game/game.min.js -->
+		<script type="text/javascript" src="src/main/Main.js"></script>
+		<!-- /build -->
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			window.onload = function()
+			{
+			  var app = new AppTitle.Main();
+			  app.run();
+			};
+		</script>
+	</body>
+</html>
