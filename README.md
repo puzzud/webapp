@@ -129,12 +129,12 @@ To run the web version of the application (particularly during development), set
 It's possible to create a basic web server with this Python command:
 
 ```
-python -m SimpleHTTPServer 8081 /path/to/webapp
+python -m SimpleHTTPServer 8080 /path/to/webapp
 ```
 
 Then, navigate a web server to:
 
-[http://localhost:8081](http://localhost:8081)
+[http://localhost:8080](http://localhost:8080)
 
 It's possible to start Google Chrome with the following parameter to allow a web browser to read directly from the **webapp** file system directory:
 
