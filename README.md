@@ -47,7 +47,7 @@ Install **grunt-cli**, via the command line:
 npm install -g grunt-cli
 ```
 
-From the same console, navigate to the **gjweb** root directory.
+From the same console, navigate to the **webapp** root directory.
 
 Install its dependencies, via the command line (this can take a few minutes):
 
@@ -109,8 +109,8 @@ npm run release
 
 **Location**
 
-Resulting debug builds will populate */path/to/gjweb/build/debug/apptitle*.
-Resulting release builds will populate */path/to/gjweb/build/debug/apptitle-<version>*.
+Resulting debug builds will populate */path/to/webapp/build/debug/apptitle*.
+Resulting release builds will populate */path/to/webapp/build/debug/apptitle-<version>*.
 
 The build directories will be contain the follow target subdirectories.
 - win64
@@ -124,19 +124,19 @@ Usage
 ---
 **Web**
 
-To run the web version of the application (particularly during development), set up a web server to point to the root direcctory of **gjweb**.
+To run the web version of the application (particularly during development), set up a web server to point to the root direcctory of **webapp**.
 
 It's possible to create a basic web server with this Python command:
 
 ```
-python -m SimpleHTTPServer 8081 /path/to/gjweb
+python -m SimpleHTTPServer 8081 /path/to/webapp
 ```
 
 Then, navigate a web server to:
 
 [http://localhost:8081](http://localhost:8081)
 
-It's possible to start Google Chrome with the following parameter to allow a web browser to read directly from the **gjweb** file system directory:
+It's possible to start Google Chrome with the following parameter to allow a web browser to read directly from the **webapp** file system directory:
 
 ```
 google-chrome  --allow-file-access-from-files
