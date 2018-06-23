@@ -35,7 +35,6 @@ module.exports = function(grunt, tasks)
           hoist_vars: true,
           if_return: true,
           join_vars: true,
-          cascade: true,
           negate_iife: true,
           pure_getters: true,
           keep_fargs: true,

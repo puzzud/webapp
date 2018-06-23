@@ -1,4 +1,5 @@
-var AppTitle = {};
+/** @namespace */
+AppTitle = {};
 
 /** @constructor */
 AppTitle.Main = function(game)

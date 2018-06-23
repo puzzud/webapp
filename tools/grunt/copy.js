@@ -58,11 +58,11 @@ module.exports = function(grunt, tasks)
       [
         {
           expand: true,
-          cwd: grunt.uri + 'platforms/android/build/outputs/apk/',
+          cwd: grunt.uri + 'platforms/android/app/build/outputs/apk/debug/',
           src:
           [
-            'android-*-debug.apk',
-            '!android-*unaligned.apk'
+            'app-debug.apk',
+            '!output.json'
           ],
           dest: grunt.uriBuildAndroid,
           nonull: true
@@ -76,11 +76,11 @@ module.exports = function(grunt, tasks)
       [
         {
           expand: true,
-          cwd: grunt.uri + 'platforms/android/build/outputs/apk/',
+          cwd: grunt.uri + 'platforms/android/app/build/outputs/apk/release/',
           src:
           [
-            'android-*-release-unsigned.apk',
-            '!android-*unaligned.apk'
+            'app-release-unsigned.apk',
+            '!output.json'
           ],
           dest: grunt.uriBuildAndroid,
           nonull: true
