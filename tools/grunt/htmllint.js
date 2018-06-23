@@ -15,9 +15,13 @@ module.exports = function (grunt, tasks)
     {
       options:
       {
-        force: false,
+        force: true,
         path: false,
-        reportpath: false // Turns logging to a file off, output will show in the CLI.
+        reportpath: false, // Turns logging to a file off, output will show in the CLI.
+        opts:
+        {
+          maxerr: 1 // Acount of viewport user-scalable=no warning/error bullshit.
+        }
       },
 
       // The files that we want to check.
